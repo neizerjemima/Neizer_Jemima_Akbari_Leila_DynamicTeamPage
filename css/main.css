@@ -7,11 +7,16 @@
 	margin: 0 auto;
 	width: 1920px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.699);
+    background-color: #DFDFDF;
 }
 
 body {
     font-family: 'Montserrat', arial, sans-serif;
-    color: black;
+    color: #1F221A;
+}
+
+#header {
+    background-color: #ffffff;
 }
 
 /* 2. ---Grid--- */
@@ -21,13 +26,14 @@ body {
 	grid-column-gap: 38px;
 	padding-left: 19px;
 	padding-right: 19px;
+    padding-bottom: 10px;
 }
 
 /* 3. ---Header--- */
 #logo {
     grid-column: 1/2;
     margin-left: 110px;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-bottom: 15px;
 }
 
@@ -75,6 +81,135 @@ body {
 #search:checked {
    color: #1f221a;
    cursor: auto;
+}
+
+/* 4. main */
+.main-header {
+    justify-content: center;
+	align-items: center;
+	text-align: center;
+    margin-top: 100px;
+}
+
+.sub-header {
+    justify-content: center;
+	align-items: center;
+	text-align: center;
+    margin-top: 30px;
+    font-size: 17px;
+}
+
+#leila-pic {
+    margin-top: 90px;
+    grid-column: 3/6;
+    border-radius: 300px;
+    border: 6px #fff solid;
+    padding: 17px;
+}
+
+#leila-pic:hover {
+    border: 6px #BC8D0A solid;
+}
+
+#leila-name {
+    grid-column: 4/6;
+    margin-top: 35px;
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+#leila-name:hover {
+    color: #BC8D0A;
+}
+
+#jemima-pic {
+    margin-top: 90px;
+    grid-column: 7/10;
+    margin-left: 50px;
+    border-radius: 300px;
+    border: 6px #fff solid;
+    padding: 17px;
+}
+
+#jemima-pic:hover {
+    border: 6px #BC8D0A solid;
+}
+
+#jemima-name {
+    grid-column: 8/11;
+    margin-top: 35px;
+    font-size: 40px;
+    border-radius: 300px;
+    margin-left: 25px;
+}
+
+#jemima-name:hover {
+    color: #BC8D0A;
+}
+
+#leila-info h3 {
+    grid-column: 3/11;
+    font-size: 26px;
+    justify-content: center;
+	align-items: center;
+	text-align: center;
+    margin-top: 60px;
+}
+
+#jemima-info h3 {
+    grid-column: 3/11;
+    font-size: 26px;
+    justify-content: center;
+	align-items: center;
+	text-align: center;
+    margin-top: 60px;
+}
+
+#leila-education {
+    grid-column: 3/7;
+}
+
+#leila-education h4 {
+    font-size: 24px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+#leila-education h5 {
+    grid-column: 1/2;
+    font-size: 21px;
+    padding-top: 25px;
+    /* padding: 10px; */
+    margin-left: 0px;
+    background-color: #BC8D0A;
+    height: 45px;
+    width: 160px;
+    justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#leila-education h6 {
+    grid-column: 3/6;
+    font-size: 20px;
+    margin-top: 25px;
+    /* margin-bottom: -100px; */
+    margin-left: -210px;
+}
+
+#leila-experience{
+    margin-top: 70px;
+}
+
+#leila-experience h4 {
+    /* grid-column: 3/11; */
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+#background-color {
+    background-color: #BC8D0A;
+    grid-column: 3/11;
 }
 
 

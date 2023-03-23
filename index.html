@@ -12,7 +12,7 @@
 <body>
     <h1 class="hidden">Zima Page</h1>
     <div id="container">
-        <header class="grid">
+        <header class="grid" id="header">
             <div id="logo">
                 <img src="images/Logo.svg" alt="Zima Logo">
             </div>
@@ -38,44 +38,56 @@
                 <h2 class="sub-header">Click on each picture and read more about our team members.</h2>
             </div>
 
-            <div id="pictures">
-                <img src="images/team-member-leila.png" alt="leila-picture">
-                <h2>Leila Akbari</h2>
-                <img src="images/team-member-Jemima.jpg" alt="jemima-picture">
-                <h2>Jemima Neizer</h2>
+            <div id="pictures" class="grid">
+                <img src="images/team-member-leila.png" alt="leila-picture" id="leila-pic">
+                <img src="images/team-member-Jemima.jpg" alt="jemima-picture" id="jemima-pic">
             </div>
 
-            <section id="leila-info">
+            <section class="grid" id="names">
+                <h2 id="leila-name">Leila Akbari</h2>
+                <h2 id="jemima-name">Jemima Neizer</h2>
+            </section>
+
+            <section id="leila-info" class="grid">
                 <h3>Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor. sit 
                     amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, 
                     turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium 
                     odio magna get risus.</h3>
+            </section>
 
-                    <div class="education">
+            <section id="leila" class="grid">
+                <!-- <h3>Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor. sit 
+                    amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, 
+                    turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium 
+                    odio magna get risus.</h3> -->
+
+                    <section class="grid" id="leila-education">
                         <h4>Education:</h4>
                         <h5>2022 - Now</h5>
-                        <h5>Interactive Media Design Diploma</h5>
                         <h5>2014 - 2019</h5>
-                        <h5>Bachelor of Textile Design</h5>
                         <h5>2013 - 2014</h5>
-                        <h5>Graphic Design Diploma</h5>
-                    </div>
+                        <div class="grid">
+                             <h6>Interactive Media Design Diploma</h6>
+                             <h6>Bachelor of Textile Design</h6>
+                             <h6>Graphic Design Diploma</h6>
+                        </div>
+                    </section>
 
-                    <div class="experience">
+                    <div class="grid" id="leila-experience">
                         <h4>Experience:</h4>
                         <h5>2022 - Now</h5>
-                        <h5>Interactive Media Design Diploma</h5>
+                        <h6>Interactive Media Design Diploma</h6>
                         <h5>2014 - 2019</h5>
-                        <h5>Bachelor of Textile Design</h5>
+                        <h6>Bachelor of Textile Design</h6>
                         <h5>2013 - 2014</h5>
-                        <h5>Graphic Design Diploma</h5>
+                        <h6>Graphic Design Diploma</h6>
                     </div>
                     
                 <div class="box" id="info-background"></div>
 
             </section>
 
-            <section id="jemima-info">
+            <section id="jemima-info" class="grid">
                 <h3>Nullam lobortis, turpis lobortis placerat vehicula, ipsum lacus bibendum dolor. sit 
                     amet pretium odio magna eget risus. Phasellus iaculis ultricies duiNullam lobortis, 
                     turpis lobortis placerat vehicula, ipsum lacus bibendum dolor, sit amet pretium 
