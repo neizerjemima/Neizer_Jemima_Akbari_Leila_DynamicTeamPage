@@ -8,6 +8,7 @@
 	width: 1920px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.699);
     background-color: #DFDFDF;
+    
 }
 
 body {
@@ -84,6 +85,7 @@ body {
 }
 
 /* 4. main */
+
 .main-header {
     justify-content: center;
 	align-items: center;
@@ -108,7 +110,7 @@ body {
 }
 
 #leila-pic:hover {
-    border: 6px #BC8D0A solid;
+    border: 6px #1F221A solid;
 }
 
 #leila-name {
@@ -119,7 +121,7 @@ body {
 }
 
 #leila-name:hover {
-    color: #BC8D0A;
+    color: #fff;
 }
 
 #jemima-pic {
@@ -132,7 +134,7 @@ body {
 }
 
 #jemima-pic:hover {
-    border: 6px #BC8D0A solid;
+    border: 6px #1F221A solid;
 }
 
 #jemima-name {
@@ -144,7 +146,7 @@ body {
 }
 
 #jemima-name:hover {
-    color: #BC8D0A;
+    color: #fff;
 }
 
 #leila-info h3 {
@@ -234,10 +236,30 @@ body {
     grid-column: 3/11;
 }
 
-.box {
-    color: #BC8D0A;
-    height: 500px;
+.white-box {
+    background-color: white;
+    width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 220px;
+    margin-right: 220px; */
+    margin-top: 30px;
+
 }
+
+
+.gold-box {
+    background-color: #BC8D0A;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    display: flex;
+    /* padding-top: 150px; */
+    padding: 150px 50px;
+}
+
 
 /* 9. ---Footer--- */
 #f-logo {
