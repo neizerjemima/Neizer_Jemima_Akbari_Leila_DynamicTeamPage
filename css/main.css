@@ -11,6 +11,10 @@
     
 }
 
+li {
+    list-style: none;
+}
+
 body {
     font-family: 'Montserrat', arial, sans-serif;
     color: #1F221A;
@@ -66,23 +70,59 @@ body {
     letter-spacing: 3px;
 }
 
-#search {
+/* #header a i {
     margin-top: 52px;
     border: solid 3px #1f221a;
     border-radius: 100px;
     margin-bottom: 33px;
     grid-column: 10/12;
-}
-
-#search img {
     margin-left: 15px;
     margin-top: 10px;
 }
 
-#search:checked {
+.fa-magnifying-glass:checked {
+    color: #919191;
+    cursor: auto;
+ } */
+ #search-header {
+    background-color: #fff;
+    color: #1F221A;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	height: 30px;
+	width: 251px;
+    border: 3px solid #1F221A;
+	border-radius: 50px;
+	margin-top: 57px;
+	margin-left: 28px;
+    text-decoration: none;
+    margin-bottom: 33px;
+}
+
+
+#search-header h3:hover{
+	opacity: 50%;
+    cursor: auto;
+}
+/* #search {
+    margin-top: 52px;
+    border: solid 3px #1f221a;
+    border-radius: 100px;
+    margin-bottom: 33px;
+    grid-column: 10/12;
+} */
+
+/* #search img {
+    margin-left: 15px;
+    margin-top: 10px;
+} */
+
+/* #search:checked {
    color: #1f221a;
    cursor: auto;
-}
+} */
 
 /* 4. main */
 
@@ -101,61 +141,128 @@ body {
     font-size: 17px;
 }
 
-#leila-pic {
-    margin-top: 90px;
-    grid-column: 3/6;
-    border-radius: 300px;
-    border: 6px #fff solid;
-    padding: 17px;
+
+#pictures button {
+    /* grid-column: 3/10; */
+    background: none;
+    outline: 10px;
+    border: none;
 }
 
-#leila-pic:hover {
-    border: 6px #1F221A solid;
+#picture button {
+    background: none;
+    outline: 10px;
+    border: none;
 }
 
-#leila-name {
+#le  {
+    grid-column: 2/6;
+    margin-left: 10%;
+}
+
+#jay  {
+    grid-column: 6/10;
+    margin-left: 52px;
+}
+
+#picture {
+    grid-row: 1/2;
+}
+
+#pictures {
+    grid-row: 1/2;
+}
+
+/* #leila-name {
     grid-column: 4/6;
     margin-top: 35px;
     font-size: 40px;
     margin-left: 10px;
+} */
+
+#leila-pic {
+    margin-top: 90px;
+    /* grid-column: 3/6; */
+    border-radius: 300px;
+    border: 6px #fff solid;
+    padding: 17px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.726);
+}
+
+
+#jemima-pic {
+    margin-top: 90px;
+    /* grid-column: 7/10; */
+    margin-left: 50px;
+    border-radius: 300px;
+    border: 6px #fff solid;
+    padding: 17px;
+    position: relative;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.726);
+}
+
+#leila-pic:hover {
+    border: 6px #1F221A solid;
+    cursor: pointer;
+}
+
+#jemima-pic:hover {
+    border: 6px #1F221A solid;
+    cursor: pointer;
 }
 
 #leila-name:hover {
     color: #fff;
 }
 
-#jemima-pic {
-    margin-top: 90px;
-    grid-column: 7/10;
-    margin-left: 50px;
-    border-radius: 300px;
-    border: 6px #fff solid;
-    padding: 17px;
-}
-
-#jemima-pic:hover {
-    border: 6px #1F221A solid;
-}
-
-#jemima-name {
-    grid-column: 8/11;
-    margin-top: 35px;
-    font-size: 40px;
-    border-radius: 300px;
-    margin-left: 25px;
-}
-
 #jemima-name:hover {
     color: #fff;
 }
 
+
+#leila-name {
+    grid-column: 3/6;
+    margin-top: 30px;
+    font-size: 40px;
+    border-radius: 300px;
+    visibility: hidden;
+    opacity: 0;
+    margin-left: 16%;
+}
+
+#jemima-name {
+    grid-column: 7/11;
+    margin-top: 30px;
+    font-size: 40px;
+    /* border-radius: 300px; */
+    margin-left: 20%;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#picture:hover #jemima-name {
+    opacity: 1;
+    visibility: visible;
+    transition: .5s ease-in;
+}
+
+#pictures:hover #leila-name {
+    opacity: 1;
+    visibility: visible;
+    transition: .5s ease-in;
+}
+
+#leila-info {
+    margin-top: 50px;
+}
+
 #leila-info h3 {
-    grid-column: 3/11;
-    font-size: 26px;
-    justify-content: center;
+    grid-column: 2/9;
+    font-size: 24px;
+    /* justify-content: center;
 	align-items: center;
-	text-align: center;
-    margin-top: 100px;
+	text-align: center; */
+    /* margin-top: 100px; */
 }
 
 #jemima-info h3 {
@@ -167,7 +274,7 @@ body {
     margin-top: 60px;
 }
 
-#leila-education {
+/* #leila-education {
     grid-column: 3/7;
 }
 
@@ -175,21 +282,41 @@ body {
     font-size: 24px;
     margin-top: 60px;
     margin-bottom: 30px;
+} */
+
+#leila-education h2 {
+    grid-column: 2/4;
+    font-size: 30px;
+    padding-top: 15px;
+    background-color: #BC8D0A;
+    height: 50px;
+    width: 260px;
+    text-align: center;
+    border-radius: 100px;
+    color: #fff;
+    font-weight: 570;
+    margin-top: 40px;
 }
 
-#leila-education h5 {
-    grid-column: 1/2;
-    font-size: 21px;
-    padding-top: 25px;
-    /* padding: 10px; */
-    margin-left: 0px;
-    background-color: #BC8D0A;
-    height: 45px;
-    width: 160px;
-    justify-content: center;
-	align-items: center;
-	text-align: center;
+
+
+#leila-date {
+    grid-column: 4/6;
+    font-size: 24px;
+    line-height: 41px;
+    margin-top: 14px;
+    padding-left: 0;
 }
+
+#leila-course {
+    grid-column: 6/10;
+    font-size: 24px;
+    line-height: 41px;
+    margin-top: 14px;
+    padding-left: 0;
+    margin-left: -17px;
+}
+
 
 #education-info h6 {
     grid-column: 1/4;
@@ -198,8 +325,8 @@ body {
     margin-left: 20px;
 }
 
-#leila-experience{
-    margin-top: 70px;
+#leila {
+    grid-row: 2/3;
 }
 
 #leila-experience h4 {
@@ -236,18 +363,19 @@ body {
     grid-column: 3/11;
 }
 
-.white-box {
+#info-background {
     background-color: white;
-    width: 1400px;
-    display: flex;
-    flex-direction: column;
+    width: 1430px;
+    /* display: flex; */
+    /* flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     /* margin-left: 220px;
     margin-right: 220px; */
     margin-top: 30px;
-
+    grid-column: 3/12;
 }
+
 
 
 .gold-box {
