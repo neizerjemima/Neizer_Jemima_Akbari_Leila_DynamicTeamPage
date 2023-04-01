@@ -300,7 +300,21 @@ body {
     margin-top: 40px;
 }
 
-
+.skills {
+    grid-column: 2/4;
+    font-size: 30px;
+    padding-top: 15px;
+    background-color: #BC8D0A;
+    height: 50px;
+    width: 260px;
+    text-align: center;
+    border-radius: 100px;
+    color: #fff;
+    font-weight: 570;
+    margin-top: 40px;
+    grid-row: 3/3;
+    margin-left: 20px;
+}
 
 #leila_education .leila_date {
     grid-column: 4/6;
@@ -368,7 +382,7 @@ body {
 
 #info-background {
     background-color: white;
-    width: 1430px;
+    width: 1500px;
     margin-top: 30px;
     grid-column: 3/12;
 }
@@ -385,7 +399,71 @@ body {
     padding: 150px 50px;
 }
 
+.pro1 {
+    grid-column: 4/5;
+}
 
+.pro2 {
+    grid-column: 5/6;
+}
+
+.pro3 {
+    grid-column: 6/7;
+}
+
+.pro4 {
+    grid-column: 7/8;
+}
+
+
+.pro1 h3 {
+    margin-top: 38px;
+    padding-left: 21px;
+}
+
+.pro2 h3 {
+    margin-top: 38px;
+    padding-left: 28px;
+}
+
+.pro3 h3 {
+    margin-top: 38px;
+    padding-left: 38px;
+}
+.pro4 h3 {
+    margin-top: 40px;
+    padding-left: 19px;
+    font-size: 14px;
+}
+
+.progress-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #BC8D0A;
+    border-radius: 50%;
+    /* display: inline-block; */
+    margin: 10px;
+    grid-row: 3/3;
+  }
+  
+  .progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+
+  
 /* 9. ---Footer--- */
 #f-logo {
     grid-column: 2/3;  
@@ -515,8 +593,8 @@ body {
 }
 
 
-/* .lightbox {
+.lightbox {
     display: none;
- } */
+ }
 
 /* .lightbox:target { display: block; } */
