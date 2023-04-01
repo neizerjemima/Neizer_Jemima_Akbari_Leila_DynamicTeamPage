@@ -14,7 +14,7 @@ TODO: In this project, we created a page for team members, and with the help of 
 TODO: Write credits:
 https://www.w3schools.com/css/css3_backgrounds.asp
 https://www.w3schools.com/js/js_object_definition.asp
-https://www.w3schools.com/js/js_intro.asp
+
 
 ## License
 MIT
